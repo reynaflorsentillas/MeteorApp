@@ -1,0 +1,21 @@
+<head>
+  <title>New To Do</title>
+</head>
+
+<body>
+    <h1>New To Do</h1>
+    {{> todoNew}}
+</body>
+
+<template name="todoNew">
+    <div class="container">
+        <form id="add-todo" class="form-control">
+            <div class="form-group">
+                Description: <input type="text" name="description"><br>
+                Status: <input type="text" name="status"><br>
+                <input type="submit" value="Save" class="btn btn-success">
+            </div>
+        </form>
+    </div>
+
+</template>

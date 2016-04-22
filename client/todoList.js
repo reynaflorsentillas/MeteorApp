@@ -5,4 +5,4 @@ Template.todoList.helpers({
     todos: function() {
         return ToDos.find();
     }
-})
+});
