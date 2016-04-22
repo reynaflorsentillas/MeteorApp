@@ -1,32 +1,24 @@
-<head>
-  <title>To Do</title>
-</head>
-
-<body>
-    {{> nav}}
+<template name="todoList">
     <div class="container">
         <div class="page-header">
             <h1>To Do</h1>
         </div>
-        {{> todoList}}
-    </div>
-</body>
 
-<template name="todoList">
-    <table class="table">
-        <thead>
+        <table class="table">
+            <thead>
             <tr>
                 <th>Description</th>
                 <th>Status</th>
             </tr>
-        </thead>
-        <tbody>
+            </thead>
+            <tbody>
             {{#each todos}}
                 <tr>
                     <td>{{description}}</td>
                     <td>{{status}}</td>
                 </tr>
-        {{/each}}
-        </tbody>
-    </table>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
 </template>

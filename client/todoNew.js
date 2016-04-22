@@ -1,6 +1,8 @@
 /**
  * Created by ReynaflorSentillas on 4/22/2016.
  */
+Router.route('/todoNew');
+
 Template.todoNew.events({
     "submit #add-todo": function(event){
         event.preventDefault(); //this prevent built-in form submission
